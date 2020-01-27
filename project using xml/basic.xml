@@ -1,0 +1,21 @@
+<? xml version="1.0" encoding ="UTF-8" standalone="yes" ?>
+<response>
+    <people>
+        <person>
+            <name>
+"yash"
+</name>
+            <ssn>
+98409njkds
+
+</ssn>
+            <name>
+"what"
+</name>
+            <ssn>
+98409ncnkjkds
+
+</ssn>
+        </person>
+    </people>
+</response>

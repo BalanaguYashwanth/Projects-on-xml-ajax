@@ -1,0 +1,44 @@
+<html>
+
+<head>
+
+    <script type="text/javascript">
+        function change() {
+            debugger;
+            var i;
+            div = document.getElementById("mydiv");
+            c = div.getElementsByTagName("P");
+            var txt = ""
+            try {
+                for (i = 0; i < c.length; i++) {
+                    //txt = txt+div.childNodes[i].innerText;
+                    txt = txt + c[i].innerText;
+
+                }
+            } catch (err) {
+                console.log(err)
+            }
+            document.getElementById("hai").innerHTML = "<br>" + txt + " <br>";
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+
+    <div id="mydiv">
+        <p> hi</p>
+        <p> h2 </p>
+        <p> h3 </p>
+        <p> h4 </p>
+
+    </div>
+    <p id="hai"> </p>
+    <button onclick="change()"> submit </button>
+
+</body>
+
+</html>
