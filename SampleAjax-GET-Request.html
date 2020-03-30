@@ -1,0 +1,28 @@
+<html>
+<head>
+
+<script type="text/javascript">
+    function change()
+    {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            var myObj = JSON.parse(this.responseText);
+            document.getElementById("pa").innerHTML = myObj.user;
+          }
+        };
+        xmlhttp.open("GET", "http://127.0.0.1:8000/file/3584/", true);
+        xmlhttp.send();
+    }
+
+</script>
+
+
+</head>
+
+<body>
+<p id="pa"> datas </p>
+
+<button onclick=change()> Submit </button>
+</body>
+</html>
